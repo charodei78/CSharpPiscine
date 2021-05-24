@@ -17,7 +17,7 @@ static double AnnuityPayment( double creditAmount, int monthCount, double yearIn
     result = creditAmount * monthInterestRate * Math.Pow(1 + monthInterestRate, monthCount);
     result /= Math.Pow(1 + monthInterestRate, monthCount) - 1;
     
-    return Math.Round(result, 2);
+    return result;
 }
 
 static double MonthlyPaymentPrecent(double creditAmount, double interestRate, DateTime date)
@@ -26,13 +26,13 @@ static double MonthlyPaymentPrecent(double creditAmount, double interestRate, Da
     int daysInYear = DateTime.IsLeapYear(date.Year) ? 366 : 365;
 
     double result = (creditAmount * interestRate * daysCount) / (100 * daysInYear);
-    return Math.Round(result, 2);
+    return result;
 }
 
 static int NumberOfMothCredit(double paymentAmount, double creditAmount, double interestRate)
 {
     double i = MonthInterestRate(interestRate);
-    return (int) Math.Log(1 + i, paymentAmount / (paymentAmount - i * creditAmount));
+    return (int) Math.Log(paymentAmount / (paymentAmount - i * creditAmount), 1 + i);
 }
 
 static void PrintResult(double overpaymentLessPayment, double overpaymentLessTerm)
@@ -88,65 +88,73 @@ try
         throw new Exception();
     }
 }
-catch (Exception e)
+catch (Exception)
 {
     Console.WriteLine("Ошибка ввода. Проверьте входные данные и повторите запрос.");
     return 1;
 }
 
 
-
-
-double overpaymentLessPayment = 0, overpaymentLessTerm = 0, tmp;
-
-static double calculateLessPayment(int numberOfMoth, int yearInterestRate, double creditAmount, DateTime date, int earlyPaymentMonth = 0, double earlyPaymentAmount = 0)
+static double calculateLessPayment(int numberOfMoth, int yearInterestRate, double creditAmount, DateTime date, bool lessPayment = true, int earlyPaymentMonth = 0, double earlyPaymentAmount = 0)
 {
-    double precentAmount, annuityPayment, debet, sum = 0;
+    double precentAmount, annuityPayment, debet = 0, sum = 0;
+
+    string title = lessPayment ? "Рассчет с уменьшением суммы платежей" : "Рассчет с уменьшением количества месяцев";
     
-    
-    
-    Console.WriteLine("-----------------------------  Рассчет с уменьшением суммы платежей -------------------------------");
+    Console.WriteLine($"------[  {title}  ]------------------------------------");
     Console.WriteLine($"{"Дата", -8}{"Платеж", 19}{"ОД", 17}{"Проценты", 26}{"Остаток", 20}");
     Console.WriteLine("---------------------------------------------------------------------------------------------------");
 
     annuityPayment = AnnuityPayment(creditAmount, numberOfMoth, yearInterestRate);
 
-    for (int i = 0; i < numberOfMoth; i++)
+    for (int month = 1; month <= numberOfMoth && creditAmount > 0; month++)
     {
         
         precentAmount = MonthlyPaymentPrecent(creditAmount, yearInterestRate, date);
         date = date.AddMonths(1);
-        
-        
-        sum += annuityPayment;
-        
-        debet = annuityPayment - precentAmount;
-        creditAmount -= debet;
-        if (i == earlyPaymentMonth - 1)
+
+
+        if (creditAmount > 0)
+        {
+            debet = annuityPayment - precentAmount;
+            creditAmount -= debet;
+            sum += annuityPayment;
+        }
+       
+
+        if (month == earlyPaymentMonth)
         {
             creditAmount -= earlyPaymentAmount;
             sum += earlyPaymentAmount;
-            annuityPayment = AnnuityPayment(creditAmount, numberOfMoth - earlyPaymentMonth, yearInterestRate);
-
+            if (lessPayment)
+            {
+                annuityPayment = AnnuityPayment(creditAmount, numberOfMoth - earlyPaymentMonth, yearInterestRate);
+            }
+            else
+            {
+                numberOfMoth = NumberOfMothCredit(annuityPayment, creditAmount, yearInterestRate) + earlyPaymentMonth + 1;
+            }
         }
-        Console.WriteLine($"{date:d}{'|', 10}{annuityPayment, 10 :f2}{'|', 10}{debet, 10 :f2}{'|', 10}{precentAmount, 10 :f2}{'|', 10}{creditAmount, 10 :f2}");
-
-
+        
+        Console.WriteLine($"{date:d}{'|', 10}{annuityPayment, 10 :f2}{'|', 10}{debet, 10 :f2}{'|', 10}{precentAmount, 10 :f2}{'|', 10}{(creditAmount > 0 ? creditAmount : 0), 10 :f2}");
     }
 
     sum += creditAmount;
     Console.WriteLine("---------------------------------------------------------------------------------------------------");
+    Console.WriteLine();
     
     return sum;
 }
 
+double overpaymentLessPayment, overpaymentLessTerm;
 
 var date = new DateTime(2021, 05, 01);
 
 overpaymentLessPayment = -creditAmount +
-    calculateLessPayment(numberOfMoth, (int)yearInterestRate, creditAmount, date, earlyPaymentMonth, earlyPaymentAmount);
+    calculateLessPayment(numberOfMoth, (int)yearInterestRate, creditAmount, date, true, earlyPaymentMonth, earlyPaymentAmount);
 
-overpaymentLessTerm = 0;
+overpaymentLessTerm = -creditAmount +
+    calculateLessPayment(numberOfMoth, (int)yearInterestRate, creditAmount, date, false, earlyPaymentMonth, earlyPaymentAmount);
 
 PrintResult( overpaymentLessPayment, overpaymentLessTerm );
 
