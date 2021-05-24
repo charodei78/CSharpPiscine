@@ -109,31 +109,32 @@ static double calculateLessPayment(int numberOfMoth, int yearInterestRate, doubl
     Console.WriteLine($"{"Дата", -8}{"Платеж", 19}{"ОД", 17}{"Проценты", 26}{"Остаток", 20}");
     Console.WriteLine("---------------------------------------------------------------------------------------------------");
 
-    
+    annuityPayment = AnnuityPayment(creditAmount, numberOfMoth, yearInterestRate);
+
     for (int i = 0; i < numberOfMoth; i++)
     {
+        
         precentAmount = MonthlyPaymentPrecent(creditAmount, yearInterestRate, date);
         date = date.AddMonths(1);
         
-        annuityPayment = AnnuityPayment(creditAmount, numberOfMoth - i, yearInterestRate);
         
         sum += annuityPayment;
         
         debet = annuityPayment - precentAmount;
-        if (debet > creditAmount)
-        {
-            annuityPayment -= debet - creditAmount;
-            debet = creditAmount;
-        }
         creditAmount -= debet;
-
-        Console.WriteLine($"{date:d}{'|', 10}{annuityPayment, 10 :f2}{'|', 10}{debet, 10 :f2}{'|', 10}{precentAmount, 10 :f2}{'|', 10}{creditAmount, 10 :f2}");
         if (i == earlyPaymentMonth - 1)
         {
             creditAmount -= earlyPaymentAmount;
             sum += earlyPaymentAmount;
+            annuityPayment = AnnuityPayment(creditAmount, numberOfMoth - earlyPaymentMonth, yearInterestRate);
+
         }
+        Console.WriteLine($"{date:d}{'|', 10}{annuityPayment, 10 :f2}{'|', 10}{debet, 10 :f2}{'|', 10}{precentAmount, 10 :f2}{'|', 10}{creditAmount, 10 :f2}");
+
+
     }
+
+    sum += creditAmount;
     Console.WriteLine("---------------------------------------------------------------------------------------------------");
     
     return sum;
