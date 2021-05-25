@@ -1,0 +1,16 @@
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.exe
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.deps.json
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.runtimeconfig.json
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.runtimeconfig.dev.json
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.dll
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ref\ex01.dll
+C:\Users\32-ko\RiderProjects\DAY00\ex01\bin\Debug\net5.0\ex01.pdb
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.csprojAssemblyReference.cache
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.AssemblyInfoInputs.cache
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.AssemblyInfo.cs
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.csproj.CoreCompileInputs.cache
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.dll
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ref\ex01.dll
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.pdb
+C:\Users\32-ko\RiderProjects\DAY00\ex01\obj\Debug\net5.0\ex01.genruntimeconfig.cache
