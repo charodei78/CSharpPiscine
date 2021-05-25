@@ -69,10 +69,16 @@ static bool CheckName(string name)
 {
     if (String.IsNullOrEmpty(name))
         return false;
-    var rx = new Regex(@"^[a-zA-Z]+$");
+    var rx = new Regex(@"^[a-zA-Z]+[\s | -]{0,1}[a-zA-Z]+$");
     if (rx.IsMatch(name))
         return true;
     return false;
+}
+
+static int Invalid()
+{
+    Console.Write("Invalid name");
+    return 1;
 }
 
 static bool DidYouMean(string name)
@@ -102,12 +108,12 @@ string inputName = Console.ReadLine();
 
 
 if (String.IsNullOrEmpty(inputName))
-    return NotFound();
+    return Invalid();
 
 inputName = inputName.Trim();
 
 if (!CheckName(inputName))
-    return NotFound();
+    return Invalid();
 
 inputName = Char.ToUpper(inputName[0]) + inputName.Substring(1).ToLower();
 

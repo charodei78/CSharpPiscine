@@ -79,8 +79,8 @@ try
     numberOfMoth = int.Parse(args[2]);
     earlyPaymentMonth = int.Parse(args[3]);
     earlyPaymentAmount = double.Parse(args[4]);
-    
-    if (creditAmount < 0 ||
+
+    if (creditAmount <= 0 ||
         yearInterestRate < 0 ||
         numberOfMoth <= 0 ||
         earlyPaymentMonth < 0)
