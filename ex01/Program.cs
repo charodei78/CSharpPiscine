@@ -100,8 +100,12 @@ static int NotFound()
 Console.Write("Enter name: ");
 string inputName = Console.ReadLine();
 
-if (inputName == null || inputName == "")
+
+if (String.IsNullOrEmpty(inputName))
     return NotFound();
+
+inputName = inputName.Trim();
+
 if (!CheckName(inputName))
     return NotFound();
 
