@@ -35,7 +35,7 @@ namespace DAY01.Models
                 if (rate < 0)
                     OnError("Сумма меньше 0");
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 OnError("Не верный формат данных");
             }

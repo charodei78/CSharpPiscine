@@ -34,7 +34,7 @@ namespace DAY01
                     Console.WriteLine(exchangeSum.ToString());
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 onError();
                 return 1;

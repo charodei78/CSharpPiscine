@@ -176,7 +176,7 @@ namespace d01_ex01
                     case "wontdo": if (!taskTracker.TrackerIsEmpty()) taskTracker.WontDoTask(); break;
                     case "q":
                     case"quit": break;
-                    default: Console.WriteLine("Доступные комманды: add, list, done, wontdo, quit"); break;
+                    default: Console.WriteLine("Доступные комманды: add, list, done, wontdo, quit\n"); break;
                 };
             } while (input != "q" && input != "quit" && errors < 4);
 
