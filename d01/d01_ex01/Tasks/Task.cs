@@ -38,14 +38,15 @@ namespace d01_ex01.Tasks
             _stateEvents = new List<Event>();
             _stateEvents.Add(new CreatedEvent());
         }
-
+        
         public override string ToString()
         {
+            
             string result = $"- {_title} \n" +
                             $"[{_type}] [{State}]\n" +
                             $"Priority: {_priority}";
             if (_dueDate != null)
-                result += $", Due till {_dueDate:d}";
+                result += $", Due till {_dueDate.Value:M'/'d'/'yyyy}";
             if (!string.IsNullOrEmpty(_summary))
                 result += $"\n{_summary}";
 

@@ -1,6 +1,7 @@
 ﻿#nullable enable
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using d01_ex01.Tasks;
 
 namespace d01_ex01
@@ -36,7 +37,7 @@ namespace d01_ex01
 
             Console.Write("Введите срок: ");
             DateTime? dueDate = null;
-            parseResult = DateTime.TryParse(Console.ReadLine(), out var tmpDueDate);
+            parseResult = DateTime.TryParseExact(Console.ReadLine(), "M/d/yyyy", new CultureInfo("en-US"), DateTimeStyles.None, out var tmpDueDate);
             if (parseResult)
                 dueDate = tmpDueDate;
 
@@ -124,7 +125,7 @@ namespace d01_ex01
 
             if (task == null)
             {
-                OnError("Задача не найдена");
+                OnError("Ошибка ввода. Задача с таким заголовком не найдена");
                 return;
             }
             
