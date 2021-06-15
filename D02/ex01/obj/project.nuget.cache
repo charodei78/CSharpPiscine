@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "51DLDUUs0sUge5BsSLbGXoTgW44PUDbvJ63UlnrqBmu/JlbHCd5y+BPZwWRNFcdj55F83/W1OTBwjEfV4aJrWg==",
+  "dgSpecHash": "Ct8dvMEL4GmK48mPeoN7wDB6UlTwlWG1M8Qu8RUI5LAjKg8AmUVkAtCbYrqIfpANJvzym+Pi3iLJEm9g8v1iGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\ex01.csproj",
+  "projectFilePath": "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/ex01.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\32-ko\\.nuget\\packages\\yamldotnet\\11.1.3-nullable-enums-0003\\yamldotnet.11.1.3-nullable-enums-0003.nupkg.sha512"
+    "/home/hheimerd/.nuget/packages/yamldotnet/11.1.3-nullable-enums-0003/yamldotnet.11.1.3-nullable-enums-0003.nupkg.sha512"
   ],
   "logs": []
 }

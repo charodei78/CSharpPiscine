@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\ex01.csproj": {}
+    "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/ex01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\ex01.csproj": {
+    "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/ex01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\ex01.csproj",
+        "projectUniqueName": "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/ex01.csproj",
         "projectName": "ex01",
-        "projectPath": "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\ex01.csproj",
-        "packagesPath": "C:\\Users\\32-ko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\32-ko\\RiderProjects\\D02\\ex01\\obj\\",
+        "projectPath": "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/ex01.csproj",
+        "packagesPath": "/home/hheimerd/.nuget/packages/",
+        "outputPath": "/home/hheimerd/RiderProjects/CSharpPiscine/D02/ex01/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\32-ko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/hheimerd/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/5.0.301/RuntimeIdentifierGraph.json"
         }
       }
     }
