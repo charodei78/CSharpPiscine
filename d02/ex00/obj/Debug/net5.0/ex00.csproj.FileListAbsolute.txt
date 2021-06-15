@@ -1,0 +1,16 @@
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00.deps.json
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00.runtimeconfig.json
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00.runtimeconfig.dev.json
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00.dll
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ref/ex00.dll
+/home/hheimerd/RiderProjects/day02/ex00/bin/Debug/net5.0/ex00.pdb
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.csproj.AssemblyReference.cache
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.GeneratedMSBuildEditorConfig.editorconfig
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.AssemblyInfoInputs.cache
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.AssemblyInfo.cs
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.csproj.CoreCompileInputs.cache
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.dll
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ref/ex00.dll
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.pdb
+/home/hheimerd/RiderProjects/day02/ex00/obj/Debug/net5.0/ex00.genruntimeconfig.cache

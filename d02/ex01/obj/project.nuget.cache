@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aLHl2VIf8LwZgR5vNiJSORd/wcbAXwfVt5/JyNFk/nYYPHXmfiO80RLwjmQbiUxMAIJj1ljpxhbehgc7uex+VA==",
+  "success": true,
+  "projectFilePath": "/home/hheimerd/RiderProjects/day02/ex01/ex01.csproj",
+  "expectedPackageFiles": [
+    "/home/hheimerd/.nuget/packages/yamldotnet/11.1.3-nullable-enums-0003/yamldotnet.11.1.3-nullable-enums-0003.nupkg.sha512"
+  ],
+  "logs": []
+}
