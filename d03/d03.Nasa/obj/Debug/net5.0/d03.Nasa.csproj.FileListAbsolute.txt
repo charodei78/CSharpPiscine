@@ -1,0 +1,12 @@
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.csproj.AssemblyReference.cache
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.GeneratedMSBuildEditorConfig.editorconfig
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.AssemblyInfoInputs.cache
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.AssemblyInfo.cs
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.csproj.CoreCompileInputs.cache
+/home/hheimerd/RiderProjects/day03/d03.Nasa/bin/Debug/net5.0/d03.Nasa.deps.json
+/home/hheimerd/RiderProjects/day03/d03.Nasa/bin/Debug/net5.0/d03.Nasa.dll
+/home/hheimerd/RiderProjects/day03/d03.Nasa/bin/Debug/net5.0/ref/d03.Nasa.dll
+/home/hheimerd/RiderProjects/day03/d03.Nasa/bin/Debug/net5.0/d03.Nasa.pdb
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.dll
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/ref/d03.Nasa.dll
+/home/hheimerd/RiderProjects/day03/d03.Nasa/obj/Debug/net5.0/d03.Nasa.pdb

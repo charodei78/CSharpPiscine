@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LdZp7+k42+Yu8dBcl+sr2BMNTrQXnkvYZsnIZBi1mb9xeaIFad/t45Nt6T4EegH1Km+X+z3ZlM/Ieya3ircRjg==",
+  "success": true,
+  "projectFilePath": "/home/hheimerd/RiderProjects/day03/d03.Nasa/d03.Nasa.csproj",
+  "expectedPackageFiles": [
+    "/home/hheimerd/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
