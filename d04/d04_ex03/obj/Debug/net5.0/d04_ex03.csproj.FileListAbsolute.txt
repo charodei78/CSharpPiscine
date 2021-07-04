@@ -1,0 +1,15 @@
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/d04_ex03.deps.json
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/d04_ex03.runtimeconfig.json
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/d04_ex03.runtimeconfig.dev.json
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/d04_ex03.dll
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/ref/d04_ex03.dll
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/bin/Debug/net5.0/d04_ex03.pdb
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.csprojAssemblyReference.cache
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.AssemblyInfoInputs.cache
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.AssemblyInfo.cs
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.csproj.CoreCompileInputs.cache
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.dll
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/ref/d04_ex03.dll
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.pdb
+/Users/hheimerd/Desktop/CSharpPiscine/d04/d04_ex01/d04_ex03/obj/Debug/net5.0/d04_ex03.genruntimeconfig.cache
